@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memórias do Nosso Amor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Memórias do Nosso Amor</h1>
+  </header>
+
+  <main>
+    <section id="gallery">
+      <div class="photo" onclick="openLightbox('IMG_20240511_191336_594.jpg')">
+        <img src="IMG_20240511_191336_594.jpg" alt="Foto 1">
+      </div>
+      <div class="photo" onclick="openLightbox('IMG_20240511_191349_198.jpg')">
+        <img src="IMG_20240511_191349_198.jpg" alt="Foto 2">
+      </div>
+      <div class="photo" onclick="openLightbox('IMG_20240511_191407_018.jpg')">
+        <img src="IMG_20240511_191407_018.jpg" alt="Foto 3">
+      </div>
+      <div class="midia" onclick="openVideo('VID-20240512-WA0044.mp4')">
+        <video src="VID-20240512-WA0044.mp4" width="200" height="200" controls>
+            
+        </video>
+      <!-- Adicione mais fotos aqui -->
+    </section>
+
+    <div id="lightbox" onclick="closeLightbox()">
+      <video id="lightbox-video" src=""></video>
+      <img id="lightbox-img" src="" alt="Imagem em destaque">
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Memórias do Nosso Amor</p>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
